@@ -16,11 +16,16 @@ Looking at the information provided, our data is paired since crash data was rec
 
 #### Paired Difference Test of Hypothesis for ud = (u1 - u2)
 
-First, we make a column of crash data differences (after cameras - before cameras). We will use our random sample of differences to make inferences about the mean of the population of differences, ud, which is equal to u1 - u2. 
-
-u1 = the true mean number of crashes at at intersections with installed cameras and u2 = the true mean number of crashes at intersections without cameras. 
+First, we make a column of crash data differences (after cameras - before cameras). We will use our random sample of differences to make inferences about the mean of the population of differences, ud, which is equal to u1 - u2. u1 = the true mean number of crashes at at intersections with installed cameras in Fairfax County, Virginia and u2 = the true mean number of crashes at intersections without cameras in Fairfax County, Virginia. We are interested in whether red light cameras decrease the average amount of red-light-running crashes.
 
 Ho: ud = 0
 
 Ha: ud < 0 
+
+
+#### Small Sample Student's t-Test Statistic
+
+
+
+
 
