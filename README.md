@@ -44,7 +44,6 @@ We use the same code from our one sameple t-test project. The only difference is
 
 
 ```
-
 crash <- read.csv("REDLIT.csv",header = TRUE)
 
 
@@ -70,7 +69,7 @@ t.test(x = crash$After, y=crash$Before,alternative = "less",mu = 0,conf.level = 
 ### sample estimates:
 ### mean of the differences 
 ###        -1.006923 
-
+```
 
 
 
