@@ -27,6 +27,6 @@ Ha: ud < 0
 
 
 
-![distribution](distribution-red-light)
+![distribution](distribution-red-light.png)
 
 
