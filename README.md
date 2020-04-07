@@ -30,6 +30,25 @@ Ha: ud < 0
 ![distribution](distribution-red-light.png)
 
 
-Using the information above, our test statistic t = -1.006923/(1.2092517/sqrt(13)) = −3.002280259
+Using the information above, our test statistic t = -1.006923/(1.2092517/sqrt(13)) = −3.002280259. Note that instead of n, we use nd which is the number of pairs. Looking at a table, we find the t-value corresponding to a = .01 and a df = 12 which is 2.681. Since -3.002280259 < -2.681, we have enough evidence to prove that the per year, the true average of red-light-running crashes for intersections with cameras installed in Fairfax County, VA is less than the true mean number of red-light-running crashes at intersections without cameras in Fairfax County, VA. Looking at a table, we see that our t statistic is between t(.010) and t(.005). This means that the p-value is between .010 and .005.
+
+To find a 99% one sided confidence interval, we use the same confidence interval formula for one sample t-tests. We find that -1.006923 + 2.681(1.2092517/sqrt(13)) = (-Inf, -0.1077529259). We interpret this as per year, the true average of red-light-running crashes for intersections with cameras installed in Fairfax County, VA is (-Inf, -0.1077529259) less than the true mean number of red-light-running crashes at intersections without cameras in Fairfax County, VA.
+
+Looking at the information below, our results agree with JMP.
+![distribution](t-test-red-light.png)
+
+We use the same code from our one sameple t-test project. The only difference is we calculate a column of differences, make sure `paired = TRUE` since we have paired data, and we make sure that the after cameras group is first to agree with our null hypothesis. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
