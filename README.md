@@ -37,12 +37,37 @@ To find a 99% one sided confidence interval, we use the same confidence interval
 Looking at the information below, our results agree with JMP.
 ![distribution](t-test-red-light.png)
 
-We use the same code from our one sameple t-test project. The only difference is we calculate a column of differences, make sure `paired = TRUE` since we have paired data, and we make sure that the after cameras group is first to agree with our null hypothesis. 
+
+We use the same code from our one sameple t-test project. The only difference is we calculate a column of differences, make sure `paired = TRUE` since we have paired data, and we make sure that x = after cameras group to agree with our null hypothesis. 
 
 
+```
+
+crash <- read.csv("REDLIT.csv",header = TRUE)
 
 
+crash$diff <- crash$After-crash$Before
+#  [1] -2.24 -0.27 -0.29 -2.76 -0.56  0.85  0.32 -0.49 -1.58 -2.78 -0.60 -0.26 -2.43
 
+
+hist(crash$diff)
+
+qqnorm(crash$diff)
+qqline(crash$diff)
+
+
+t.test(x = crash$After, y=crash$Before,alternative = "less",mu = 0,conf.level = .99,paired = TRUE)
+
+### Paired t-test
+
+### data:  crash$After and crash$Before
+### t = -3.0023, df = 12, p-value = 0.00551
+### alternative hypothesis: true difference in means is less than 0
+### 99 percent confidence interval:
+###       -Inf -0.1077537
+### sample estimates:
+### mean of the differences 
+###        -1.006923 
 
 
 
