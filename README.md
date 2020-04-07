@@ -35,6 +35,8 @@ Using the information above, our test statistic t = -1.006923/(1.2092517/sqrt(13
 To find a 99% one sided confidence interval, we use the same confidence interval formula for one sample t-tests. We find that -1.006923 + 2.681(1.2092517/sqrt(13)) = (-Inf, -0.1077529259). We interpret this as per year, the true average of red-light-running crashes for intersections with cameras installed in Fairfax County, VA is (-Inf, -0.1077529259) less than the true mean number of red-light-running crashes at intersections without cameras in Fairfax County, VA.
 
 Looking at the information below, our results agree with JMP.
+
+
 ![distribution](t-test-red-light.png)
 
 
